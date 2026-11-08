@@ -63,6 +63,14 @@ nav a:hover {
 }
 
 /* HERO */
+#introduction a {
+  color: #F59E0B;
+  font-weight: bold;
+}
+
+#introduction a:hover {
+  color: #FFFFFF;
+}
 #introduction {
   background: #111827;
   color: #F9FAFB;
@@ -138,6 +146,33 @@ summary {
   cursor: pointer;
   font-weight: bold;
   margin-top: 12px;
+}
+/* PROJECT FILTER BUTTONS */
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.project-filters button {
+  background: #2563EB;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.project-filters button:hover,
+.project-filters button[aria-pressed="true"] {
+  background: #111827;
+}
+
+.project-filters button:focus-visible {
+  outline: 3px solid #F59E0B;
+  outline-offset: 4px;
 }
 
 /* CONTACT */

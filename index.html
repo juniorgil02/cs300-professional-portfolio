@@ -1,149 +1,259 @@
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gerardo Gil | IT Portfolio</title>
+  <meta name="description" content="Gerardo Gil's Information Technology portfolio showcasing web development, programming, and technical skills.">
+  <title>Gerardo Gil | IT Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
- <header class="site-header">
-  <a class="logo" href="#introduction">Gerardo Gil</a>
-  <nav aria-label="Main navigation">
-    <a href="#introduction">Home</a>
-    <a href="#projects">Projects</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#resume">Resume</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+
+  <header class="site-header">
+    <a class="logo" href="#introduction">Gerardo Gil</a>
+
+    <nav aria-label="Main navigation">
+      <a href="#introduction">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
   <main>
+
+    <!-- INTRODUCTION -->
     <section id="introduction">
- <h1>Gerardo Gil</h1>
-<p class="hero-tagline">IT Student | Aspiring IT Professional</p>
-<p>Welcome to my portfolio! I'm an Information Technology student at Northeastern Illinois University interested in technology, programming, and problem-solving.</p>
-<a href="#projects">Explore My Projects</a>
+      <h1>Gerardo Gil</h1>
+      <p class="hero-tagline">IT Student | Aspiring IT Professional</p>
+      <p>
+        Welcome to my portfolio! I'm an Information Technology student
+        at Northeastern Illinois University interested in technology,
+        programming, and problem-solving.
+      </p>
+      <a href="#projects">Explore My Projects</a>
     </section>
-   <section id="about">
-<h2>About Me</h2>
 
-<p>
-  I'm Gerardo Gil, an Information Technology student at
-  Northeastern Illinois University. I'm developing my skills
-  in programming, web development, computer networking, and
-  information security.
-</p>
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Me</h2>
 
-<p>
-  Through my coursework and personal projects, I've gained
-  experience solving technical problems, writing code, and
-  learning how technology works. My goal is to continue
-  growing my technical skills and pursue opportunities in
-  the IT field.
-  </section>
-</p>
-<section id="projects">
-<h2>My Projects</h2>
-<p>Here are some examples of my work from my web development and programming coursework.</p>
+      <p>
+        I'm Gerardo Gil, an Information Technology student at
+        Northeastern Illinois University. I'm developing my skills
+        in programming, web development, computer networking, and
+        information security.
+      </p>
 
-<div class="project-grid">
-</section>
-  <article class="project-card">
-    <h3>Profile Card</h3>
-    <p>
-      A personal profile card built with HTML and CSS.
-      It includes my profile information, image, and professional links.
-    </p>
-    <p><strong>Technologies:</strong> HTML, CSS</p>
-    <a href="https://juniorgil02.github.io/cs300-assignment-1/" target="_blank" rel="noopener noreferrer">View Live Project</a>
-    <a href="https://github.com/juniorgil02/cs300-assignment-1" target="_blank" rel="noopener noreferrer">View Source Code</a>
-    <details>
-      <summary>Read Case Study</summary>
-      <p>I created a personal profile card using HTML and CSS to introduce myself and provide visitors with a quick overview of my professional identity. I used spacing, padding, borders, rounded corners, and a subtle shadow to organize the information. I also added hover effects to the social media buttons.</p>
-    </details>
-  </article>
+      <p>
+        Through my coursework and personal projects, I've gained
+        experience solving technical problems, writing code, and
+        learning how technology works. My goal is to continue
+        growing my technical skills and pursue opportunities in
+        the IT field.
+      </p>
+    </section>
 
-  <article class="project-card">
-    <h3>Game Collection Toolkit</h3>
-    <p>
-      A JavaScript project that validates, searches, filters,
-      sorts, and summarizes game collection records.
-    </p>
-    <p><strong>Technologies:</strong> JavaScript</p>
-    <a href="https://github.com/juniorgil02/cs300-assignment-3" target="_blank" rel="noopener noreferrer">View Source Code</a>
-    <details>
-      <summary>Read Case Study</summary>
-      <p>I created a JavaScript data toolkit with seven functions for validating, normalizing, filtering, searching, sorting, summarizing, and reporting game records. I tested the functions using a test harness with 14 test cases, all of which passed.</p>
-    </details>
-  </article>
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="project-filters">
+        <button type="button" data-filter="all">All Projects</button>
+        <button type="button" data-filter="web">HTML &amp; CSS</button>
+        <button type="button" data-filter="javascript">JavaScript</button>
+      </div>
 
-</div>
- <section id="skills">
-<h2>Technical Skills</h2>
+      <h2>My Projects</h2>
+      <p>
+        Here are some examples of my work from my web development
+        and programming coursework.
+      </p>
 
-<div class="skills-grid">
-  </section>
-  <article class="skill-card">
-    <h3>Web Development</h3>
-    <p>HTML, CSS, responsive layouts</p>
-  </article>
+      <div class="project-grid">
 
-  <article class="skill-card">
-    <h3>Programming</h3>
-    <p>JavaScript, functions, data validation, and testing</p>
-  </article>
+        <article class="project-card" data-category="web">
+          <h3>Profile Card</h3>
 
-  <article class="skill-card">
-    <h3>Tools</h3>
-    <p>Visual Studio Code, Git, GitHub</p>
-  </article>
+          <p>
+            A personal profile card built with HTML and CSS.
+            It includes my profile information, image, and
+            professional links.
+          </p>
 
-  <article class="skill-card">
-    <h3>IT Fundamentals</h3>
-    <p>Computer networking, troubleshooting, and information security fundamentals</p>
-  </article>
-</div>
-<section id="contact">
-<h2>Get In Touch</h2>
+          <p><strong>Technologies:</strong> HTML, CSS</p>
 
-<p>
-  I'm always interested in connecting with people in the
-  technology field and exploring new opportunities.
-  Feel free to reach out through my professional profiles.
-</p>
+          <a href="https://juniorgil02.github.io/cs300-assignment-1/"
+             target="_blank" rel="noopener noreferrer">View Live Project</a>
 
-<div class="contact-links">
-  <a href="https://github.com/juniorgil02" target="_blank" rel="noopener noreferrer">
-    GitHub
-  </a>
+          <a href="https://github.com/juniorgil02/cs300-assignment-1"
+             target="_blank" rel="noopener noreferrer">View Source Code</a>
 
-  <a href="https://www.linkedin.com/in/gerardojgil/" target="_blank" rel="noopener noreferrer">
-    LinkedIn
-  </a>
-</div>
-<section id="resume">
-  <h2>My Resume</h2>
+          <details>
+            <summary>Read Case Study</summary>
 
-<p>
-  Interested in learning more about my education, technical
-  skills, and experience? View my resume below.
-</p>
+            <p>
+              I created a personal profile card using HTML and CSS
+              to introduce myself and provide visitors with a quick
+              overview of my professional identity. The goal was to
+              create a clean, organized design that displays my name,
+              profile information, image, and professional links.
 
-<a href="resume.pdf" target="_blank" rel="noopener noreferrer">
-  View My Resume (PDF)
-</a>
-</section>
+              The intended audience includes people who want to learn
+              more about me and access my professional profiles. I used
+              HTML to structure the content and CSS to control the
+              layout, spacing, padding, borders, rounded corners, and
+              shadow effects.
+
+              One design decision I made was using rounded corners and
+              a subtle shadow to make the profile card stand out while
+              keeping the appearance professional. I also added hover
+              effects to the social media buttons to make the links
+              more interactive.
+
+              I checked the project by opening the live website and
+              verifying that the profile information, image, and social
+              links displayed correctly. I also tested the hover
+              effects. One improvement I would make is refining the
+              responsive layout for different screen sizes and adding
+              more information about my technical interests and
+              experience.
+            </p>
+          </details>
+        </article>
+
+        <article class="project-card" data-category="javascript">
+          <h3>Game Collection Toolkit</h3>
+
+          <p>
+            A JavaScript project that validates, searches, filters,
+            sorts, and summarizes game collection records.
+          </p>
+
+          <p><strong>Technologies:</strong> JavaScript</p>
+
+          <a href="https://github.com/juniorgil02/cs300-assignment-3"
+             target="_blank" rel="noopener noreferrer">View Source Code</a>
+
+          <details>
+            <summary>Read Case Study</summary>
+
+            <p>
+              I created a JavaScript data toolkit designed to manage
+              and process video game collection records. The project
+              includes seven functions that validate, normalize,
+              filter, search, sort, summarize, and generate reports
+              from game collection data.
+
+              The intended users are people who want to organize and
+              work with game collection information. The goal was to
+              make sure records could be processed accurately while
+              handling different types of input.
+
+              I used JavaScript functions to separate each task into
+              manageable parts. One important decision was to validate
+              and normalize records before processing them. This helps
+              maintain consistent data and prevents invalid or
+              incomplete records from causing problems.
+
+              To verify my work, I created a test harness containing
+              14 test cases. These tests checked the different
+              functions and how they handled valid and invalid data.
+              All 14 test cases passed.
+
+              One improvement I would make in the future is adding a
+              visual interface so users can interact with their game
+              collection more easily instead of relying only on
+              JavaScript functions.
+            </p>
+          </details>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Technical Skills</h2>
+
+      <div class="skills-grid">
+
+        <article class="skill-card">
+          <h3>Web Development</h3>
+          <p>HTML, CSS, responsive layouts</p>
+        </article>
+
+        <article class="skill-card">
+          <h3>Programming</h3>
+          <p>JavaScript, functions, data validation, and testing</p>
+        </article>
+
+        <article class="skill-card">
+          <h3>Tools</h3>
+          <p>Visual Studio Code, Git, GitHub</p>
+        </article>
+
+        <article class="skill-card">
+          <h3>IT Fundamentals</h3>
+          <p>
+            Computer networking, troubleshooting, and information
+            security fundamentals
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume">
+      <h2>My Resume</h2>
+
+      <p>
+        Interested in learning more about my education, technical
+        skills, and experience? View my resume below.
+      </p>
+
+      <a href="resume.pdf" target="_blank" rel="noopener noreferrer">
+        View My Resume (PDF)
+      </a>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Get In Touch</h2>
+
+      <p>
+        I'm always interested in connecting with people in the
+        technology field and exploring new opportunities.
+        Feel free to reach out through my professional profiles.
+      </p>
+
+      <div class="contact-links">
+        <a href="https://github.com/juniorgil02"
+           target="_blank" rel="noopener noreferrer">GitHub</a>
+
+        <a href="https://www.linkedin.com/in/gerardojgil/"
+           target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </section>
+
   </main>
-  <footer class="site-footer">
-  <p>&copy; 2026 Gerardo Gil. All rights reserved.</p>
 
-  <div class="footer-links">
-    <a href="https://github.com/juniorgil02" target="_blank" rel="noopener noreferrer">GitHub</a>
-    <a href="https://www.linkedin.com/in/gerardojgil/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-  </div>
-</footer>
+  <footer class="site-footer">
+    <p>&copy; 2026 Gerardo Gil. All rights reserved.</p>
+
+    <div class="footer-links">
+      <a href="https://github.com/juniorgil02"
+         target="_blank" rel="noopener noreferrer">GitHub</a>
+
+      <a href="https://www.linkedin.com/in/gerardojgil/"
+         target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </footer>
+
   <script src="app.js"></script>
+
 </body>
 </html>
